@@ -1,3 +1,5 @@
+Before you continue, this was initially made by https://github.com/siduck and I just changed the theme. All credig goes to him and if you like it star his repo (and mine) I am really not in the mood rn so if you follow the readme you'll be following his repo I made no change here.... everything works/should work though.
+
 # St (Suckless Terminal)
 
 ## Xresources live-reload demo
@@ -38,7 +40,7 @@ To do so, simply run (requires [Nix](https://nixos.org/download.html))
 ## Install
 
 ```
-git clone https://github.com/siduck/st.git
+git clone https://github.com/AnkushRoy-code/st.git
 cd st
 (change the compiler if you cant use c99 to compile: sed -i 's/^#\ CC\ =\ c99/CC=gcc/' config.mk)
 sudo make install
