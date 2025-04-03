@@ -26,7 +26,7 @@ I here have the patches Siduck/st had and what I have left in this repo.
 - scrollback
 - ~Clipboard~ (Works natively)
 - ~Alpha(Transparency)~ (I have picom)
-- ~Boxdraw~ (Native one looks good)
+- Boxdraw
 - ~patch_column ( doesnt cut text while resizing)~ (IDK what it did anyway)
 - ~font2~ (same as above)
 - ~right click paste~ (Never used this feature, so it has to go)
