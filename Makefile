@@ -23,8 +23,8 @@ config.h:
 
 st.o: config.h st.h win.h
 x.o: arg.h config.h st.h win.h hb.h
-hb.o: st.h
 boxdraw.o: config.h st.h boxdraw_data.h
+hb.o: st.h
 
 $(OBJ): config.h config.mk
 
