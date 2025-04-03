@@ -10,30 +10,12 @@ If some applications still are not displaying an icon for st try the patch
 [netwmicon](../netwmicon/). Programs like tint2 and alttab rely on a hardcoded
 icon which has to be stored by st in the \_NET\_WM\_ICON window-property.
 ---
- Makefile   |  3 +++
  config.mk  |  1 +
  st.desktop | 12 ++++++++++++
  3 files changed, 16 insertions(+)
  create mode 100644 st.desktop
-
-diff --git a/Makefile b/Makefile
-index 470ac86..2121877 100644
---- a/Makefile
-+++ b/Makefile
-@@ -49,9 +49,12 @@ install: st
- 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
- 	tic -sx st.info
- 	@echo Please see the README file regarding the terminfo entry of st.
-+	mkdir -p $(DESTDIR)$(APPPREFIX)
-+	cp -f st.desktop $(DESTDIR)$(APPPREFIX)
- 
- uninstall:
- 	rm -f $(DESTDIR)$(PREFIX)/bin/st
-+	rm -f $(DESTDIR)$(APPPREFIX)/st.desktop
- 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
- 
- .PHONY: all options clean dist install uninstall
 diff --git a/config.mk b/config.mk
+
 index 4c4c5d5..b79c517 100644
 --- a/config.mk
 +++ b/config.mk
